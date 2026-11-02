@@ -218,7 +218,7 @@ const SceneTitle: React.FC = () => {
         <div style={{marginTop: 50, transform: `scale(${sub})`, display: 'flex', alignItems: 'center', gap: 18,
           padding: '16px 40px', border: '2px solid #e8c56a', borderRadius: 6, background: 'rgba(20,10,4,.6)'}}>
           <div style={{width: 0, height: 0, borderTop: '14px solid transparent', borderBottom: '14px solid transparent', borderLeft: '24px solid #e8c56a'}} />
-          <span style={{fontFamily: cinzel, fontWeight: 700, fontSize: 34, letterSpacing: 8, color: '#f6e2b5'}}>NEW EPISODE</span>
+          <span style={{fontFamily: cinzel, fontWeight: 700, fontSize: 34, letterSpacing: 8, color: '#f6e2b5'}}>ZONARA</span>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -244,6 +244,8 @@ export const HistoryIntro: React.FC = () => {
       <Vignette />
       <Grain />
       <Letterbox />
+      <div style={{position: 'absolute', top: 130, right: 70, fontFamily: cinzel, fontWeight: 700, fontSize: 30, letterSpacing: 10,
+        color: '#e8c56a', opacity: interpolate(f, [20, 40], [0, 0.75], clamp)}}>ZONARA</div>
     </AbsoluteFill>
   );
 };
